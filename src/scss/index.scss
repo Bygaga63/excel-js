@@ -1,23 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-//@import "~normalize.css";
+@import "~../../node_modules/normalize.css/normalize.css";
 
-@import 'blocks/header';
-@import 'blocks/toolbar';
-@import 'blocks/formula';
-@import 'blocks/table';
+@import "header";
+@import "toolbar";
+@import "formula";
+@import "table";
 @import "dashboard";
 
 * {
   margin: 0;
   padding: 0;
-}
-
-html {
   box-sizing: border-box;
-}
-
-*, *::after, *::before {
-  box-sizing: inherit;
 }
 
 body {
@@ -25,11 +18,12 @@ body {
   font-size: 12px;
 }
 
-
 .excel {
   position: relative;
   color: #888;
   height: 100%;
-  max-width: 100%; //для того что бы появлялся горизонтальный скролл
+  max-width: 100%;
   font-size: .8rem;
 }
+
+

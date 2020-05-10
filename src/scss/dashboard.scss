@@ -1,7 +1,8 @@
-@import "mixins";
 @import "variables";
+@import "mixins";
 
 .db {
+
   &__header {
     position: fixed;
     left: 0;
@@ -28,14 +29,13 @@
     background: #fff;
     border-radius: 4px;
     border: 1px solid #dadce0;
-    text-decoration: none;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     font-size: 1.5rem;
+    text-decoration: none;
     color: #000;
     text-align: center;
-
 
     &:hover {
       cursor: pointer;
@@ -45,15 +45,12 @@
   }
 
   &__view {
-    margin: 0 auto;
     max-width: 1000px;
+    margin: 0 auto;
   }
-
 
   &__table {
     padding: 1rem;
-
-
   }
 
   &__list-header {
@@ -67,7 +64,7 @@
   }
 
   &__list {
-    @include clear-list();
+    @include clear-list;
   }
 
   &__record {
@@ -93,4 +90,5 @@
       }
     }
   }
+
 }
