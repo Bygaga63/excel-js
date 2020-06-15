@@ -11,4 +11,4 @@ const excel = new Excel('#app', {
     Table,
   ]
 })
-console.log(excel.render());
+excel.render();
