@@ -5,8 +5,12 @@ class Dom {
       selector;
   }
 
-  on() {
+  on(eventType, cb) {
+    this.$el.addEventListener(eventType, cb)
+  }
 
+  off(eventType, cb) {
+    this.$el.removeEventListener(eventType, cb)
   }
 
   html(html) {

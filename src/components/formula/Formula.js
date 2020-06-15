@@ -22,4 +22,8 @@ export class Formula extends ExcelComponent {
   onInput(e) {
     console.log('Formula: onInput', e)
   }
+
+  onClick(e) {
+    console.log('click');
+  }
 }
